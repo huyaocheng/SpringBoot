@@ -26,7 +26,7 @@ public class ArticlesController {
     @RequestMapping("hello")
     private String getHellowWorld(){
 
-        return "hello-world ";
+        return "hello-world afasd";
     }
 
     @RequestMapping("get")
