@@ -25,7 +25,7 @@ public class ArticlesController {
 
     @RequestMapping("hello")
     private String getHellowWorld(){
-        return "hello-world";
+        return "hello-world my git and jenkins is work~~~~~";
     }
 
     @RequestMapping("get")
