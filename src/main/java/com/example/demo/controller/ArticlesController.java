@@ -32,6 +32,8 @@ public class ArticlesController {
     @RequestMapping("get")
     private String getArticles(){
         Articles articles = articlesService.getArticles(1l);
+
+
         return articles.toString();
     }
 
@@ -40,6 +42,8 @@ public class ArticlesController {
         //配置分页查询
         PageHelper.startPage(1,2);
         List<Articles> articles = articlesService.getArticlesList();
+
+
         return articles;
     }
 }
