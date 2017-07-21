@@ -1,6 +1,0 @@
-com\example\config\MyBatisConfiguration.class
-com\example\DemoApplication.class
-com\example\demo\pojo\Articles.class
-com\example\demo\controller\ArticlesController.class
-com\example\demo\mapper\ArticlesMapper.class
-com\example\demo\service\ArticlesService.class
