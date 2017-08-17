@@ -7,9 +7,6 @@
         <property name="APP_NAME">springboot-docker-demo</property>
     </properties>
     <Appenders>
-        <Socket name="Logstash" host="192.168.194.130" port="4567" protocol="TCP">
-            <PatternLayout pattern="${PATTERN}" />
-        </Socket>
         <Console name="CONSOLE" target="SYSTEM_OUT">
             <PatternLayout pattern="${APP_NAME} %-d{yyyy-MM-dd HH:mm:ss} [%-5p] (%c{1}:%L) %m%n"/>
         </Console>
