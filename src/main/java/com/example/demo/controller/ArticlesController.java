@@ -6,6 +6,7 @@ import com.github.pagehelper.PageHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2017/7/16.
  */
-@RestController
+@Controller
 @RequestMapping("/")
 public class ArticlesController {
 
@@ -26,7 +27,7 @@ public class ArticlesController {
     @RequestMapping("hello")
     private String getHellowWorld(){
 
-        return "hello-world my jenkins and git and docker is work !!!!";
+        return "/index";
     }
 
     @RequestMapping("get")

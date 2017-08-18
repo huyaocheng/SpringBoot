@@ -16,6 +16,8 @@ spring:
       max-idle: 8
       min-idle: 8
       initial-size: 10
+  thymeleaf:
+      cache: false
 logging:
   path: classpath:log4j2.xml
 
