@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -27,9 +28,9 @@ public class ArticlesController {
     @RequestMapping("hello")
     private String getHellowWorld(){
 
-        return "/index";
+        return "index";
     }
-
+    @ResponseBody
     @RequestMapping("get")
     private String getArticles(){
         Articles articles = articlesService.getArticles(1l);
@@ -37,7 +38,7 @@ public class ArticlesController {
 
         return articles.toString();
     }
-
+    @ResponseBody
     @RequestMapping("list")
     private List<Articles> getArticlesList(){
         //配置分页查询
